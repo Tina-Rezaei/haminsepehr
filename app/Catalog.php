@@ -1,0 +1,15 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Catalog extends Model
+{
+    public function product(){
+        return $this->belongsTo('Product','product_code');
+    }
+    public function log(){
+        return $this->hasMany('Log', 'catalog_code');
+    }
+}

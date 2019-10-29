@@ -113,7 +113,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">صفحه اصلی</a></li>
+                    <li class="active"><a href="{{ route('/') }}">صفحه اصلی</a></li>
                     <li><a href="shop.html">محصولات</a></li>
                     <li><a href="single-product.html">پروژه ها</a></li>
                     <li><a href="cart.html">درباره ما</a></li>

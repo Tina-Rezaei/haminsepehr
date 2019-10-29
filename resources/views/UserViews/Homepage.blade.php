@@ -8,25 +8,25 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="single-promo promo1">
                         <i class="fa fa-refresh"></i>
-                        <p>30 Days return</p>
+                        <p>زمانت پرداخت ۳۰ روزه</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-promo promo2">
                         <i class="fa fa-truck"></i>
-                        <p>Free shipping</p>
+                        <p>ارسال رایگان</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-promo promo3">
                         <i class="fa fa-lock"></i>
-                        <p>Secure payments</p>
+                        <p>اطمینان از کیفیت</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <div class="single-promo promo4">
-                        <i class="fa fa-gift"></i>
-                        <p>New products</p>
+                        <i class="fa fa-cog"></i>
+                        <p>تکنولوژی روز</p>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="latest-product"  style="direction: ltr">
-                        <h2 class="section-title">Latest Products</h2>
+                        <h2 class="section-title">آخرین محصولات</h2>
                         <div class="product-carousel">
                             @foreach($products as $product)
                                 <div class="single-product" style="width: 240px;height: 260px;">
@@ -58,7 +58,7 @@
 {{--                                        <img src="{{ asset('vendors/ustora/img/product-6.jpg') }}" alt="">--}}
                                         <div class="product-hover">
 {{--                                            <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>--}}
-                                            <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                            <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> نمایش جزئیات</a>
                                         </div>
                                     </div>
 

@@ -34,4 +34,4 @@ Route::get('/loginpage',function (){
 
 //users routes
 Route::get('/','UserControllers\HomeController@index')->name('/');
-Route::get('singleproduct','UserControllers\SingleproductController@index')->name('singleproduct');
+Route::get('singleproduct/{id}','UserControllers\SingleproductController@index')->name('singleproduct');

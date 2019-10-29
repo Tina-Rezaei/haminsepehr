@@ -28,9 +28,10 @@ Route::resource('products','AdminControllers\ProductController');
 Route::resource('categories','AdminControllers\CategoryController')->except(['create']);;
 Route::get('categories/create/{id}','AdminControllers\CategoryController@create')->name('categories.create');
 Route::get('/loginpage',function (){
-   return view('UserViews.Homepage');
+   return view('UserViews.Singleproduct');
 });
 
 
 //users routes
 Route::get('/','UserControllers\HomeController@index')->name('/');
+Route::get('singleproduct','UserControllers\SingleproductController@index')->name('singleproduct');

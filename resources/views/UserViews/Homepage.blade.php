@@ -58,7 +58,7 @@
 {{--                                        <img src="{{ asset('vendors/ustora/img/product-6.jpg') }}" alt="">--}}
                                         <div class="product-hover">
 {{--                                            <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>--}}
-                                            <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> نمایش جزئیات</a>
+                                            <a href="{{ route('singleproduct',$product->id) }}" class="view-details-link"><i class="fa fa-link"></i> See details</a>
                                         </div>
                                     </div>
 

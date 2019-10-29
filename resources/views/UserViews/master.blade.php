@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<!--
-	ustora by freshdesignweb.com
-	Twitter: https://twitter.com/freshdesignweb
-	URL: https://www.freshdesignweb.com/ustora/
--->
 <html style="direction: rtl">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ustora Demo</title>
+    <title>شرکت حامین سپهر</title>
 
     <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+{{--    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>--}}
+{{--    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>--}}
+{{--    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>--}}
+    <link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap -->
 {{--    <link rel="stylesheet" href="css/bootstrap.min.css">--}}
@@ -40,24 +36,24 @@
 </head>
 <body>
 
-<div class="header-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="user-menu">
-                    <ul>
-                        <li><a href="#"><i class="fa fa-user"></i> ورود</a></li>
-                        <li><a href="checkout.html"><i class="fa fa-user"></i> خروج</a></li>
-                        <li><a href="#"><i class="fa fa-user"></i> پروفایل من</a></li>
-                        {{--                        <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>--}}
-                        {{--                        <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>--}}
-                    </ul>
-                </div>
-            </div>
+{{--<div class="header-area">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-md-8">--}}
+{{--                <div class="user-menu">--}}
+{{--                    <ul>--}}
+{{--                        <li><a href="#"><i class="fa fa-user"></i> ورود</a></li>--}}
+{{--                        <li><a href="checkout.html"><i class="fa fa-user"></i> خروج</a></li>--}}
+{{--                        <li><a href="#"><i class="fa fa-user"></i> پروفایل من</a></li>--}}
+{{--                        --}}{{--                        <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>--}}
+{{--                        --}}{{--                        <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
-            <div class="col-md-4">
-                <div class="header-right">
-                    <ul class="list-unstyled list-inline">
+{{--            <div class="col-md-4">--}}
+{{--                <div class="header-right">--}}
+{{--                    <ul class="list-unstyled list-inline">--}}
 {{--                        <li class="dropdown dropdown-small">--}}
 {{--                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>--}}
 {{--                            <ul class="dropdown-menu">--}}
@@ -67,38 +63,38 @@
 {{--                            </ul>--}}
 {{--                        </li>--}}
 
-                        <li class="dropdown dropdown-small">
-                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">زبان :</span><span class="value">فارسی </span><b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">English</a></li>
-                                <li><a href="#">French</a></li>
-                                <li><a href="#">German</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> <!-- End header area -->
+{{--                        <li class="dropdown dropdown-small">--}}
+{{--                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">زبان :</span><span class="value">فارسی </span><b class="caret"></b></a>--}}
+{{--                            <ul class="dropdown-menu">--}}
+{{--                                <li><a href="#">English</a></li>--}}
+{{--                                <li><a href="#">French</a></li>--}}
+{{--                                <li><a href="#">German</a></li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div> <!-- End header area -->--}}
 
-<div class="site-branding-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="logo">
-                    <h1><a href="./"><div style="background-image:url({{ url('vendors/ustora/img/logo.jpg') }});width: 100px;height: 100px;background-size: contain "></div></a></h1>
-                </div>
-            </div>
+{{--<div class="site-branding-area">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-sm-12">--}}
+{{--                <div class="logo">--}}
+{{--                    <h1><a href="./"></a></h1>--}}
+{{--                </div>--}}
+{{--            </div>--}}
 
 {{--            <div class="col-sm-6">--}}
 {{--                <div class="shopping-item">--}}
 {{--                    <a href="cart.html">Cart - <span class="cart-amunt">$100</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>--}}
 {{--                </div>--}}
 {{--            </div>--}}
-        </div>
-    </div>
-</div> <!-- End site branding area -->
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div> <!-- End site branding area -->--}}
 
 <div class="mainmenu-area">
     <div class="container">
@@ -112,12 +108,24 @@
                 </button>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" style="width: 100%; padding-top: 18px">
+                    <a href="#" class="logo" style="display: inline-block; margin-top: -18px; float: right">
+                        <div style="background-image:url({{ url('vendors/ustora/img/logo.jpg') }});width: 100px;height: 100px;background-size: contain; display: inline-block; transform: translateX(30px)"></div>
+                    </a>
+
                     <li class="active"><a href="{{ route('/') }}">صفحه اصلی</a></li>
                     <li><a href="shop.html">محصولات</a></li>
                     <li><a href="single-product.html">پروژه ها</a></li>
+                    <li><a href="#">ناحیه کاربری</a></li>
                     <li><a href="cart.html">درباره ما</a></li>
                     <li><a href="checkout.html">تماس با ما</a></li>
+
+                    <li id="langselect" class="dropdown dropdown-small">
+                        <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">زبان :</span><span class="value">فارسی </span><b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">English</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>

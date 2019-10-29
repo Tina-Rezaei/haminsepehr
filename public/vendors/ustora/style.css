@@ -26,7 +26,7 @@ h5,
 h6 {
     margin: 0 0 15px;
 }
-body { font-family:Arial, Helvetica, sans-serif; }
+body { font-family:'Vazir', Helvetica, sans-serif; }
 
 
 
@@ -74,7 +74,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
 }
 
 .mainmenu-area {background: none repeat scroll 100% 0 #fbfbfb;
-    font-family: "Roboto Condensed",sans-serif;
+    font-family: 'Vazir',sans-serif;
     text-transform: uppercase;
     width: 100%;
     z-index: 999;}
@@ -90,7 +90,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
 }
 .logo h1 a:hover {text-decoration: none;opacity: .7}
 .logo h1 a span {
-    color: #5a88ca;
+    color: #e74c3c;
 }
 .shopping-item {
     border: 1px solid #ddd;
@@ -104,11 +104,11 @@ body { font-family:Arial, Helvetica, sans-serif; }
     color: #666;
 }
 .cart-amunt {
-    color: #5a88ca;
+    color: #e74c3c;
     font-weight: 700;
 }
 .product-count {
-    background: none repeat scroll 100% 0 #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
     border-radius: 50%;
     color: #fff;
     display: inline-block;
@@ -127,8 +127,8 @@ body { font-family:Arial, Helvetica, sans-serif; }
 
 
 .shopping-item:hover {
-    background: none repeat scroll 100% 0 #5a88ca;
-    border-color: #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
+    border-color: #e74c3c;
 }
 .shopping-item:hover a {
     color: #fff;text-decoration: none
@@ -147,10 +147,10 @@ body { font-family:Arial, Helvetica, sans-serif; }
     padding: 20px;
 }
 
-.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #5a88ca; color:#FFF;}
+.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #e74c3c; color:#FFF;}
 .mainmenu-area .nav > li > a:focus {color: #FFF;}
 
-.slider-area { width:80%; position:relative; margin:0 auto; padding:5px;}
+.slider-area { width:100%; position:relative; margin:0 auto; padding:5px;}
 /*-------------------------
 [9. Block slider]
 ---------------------------*/
@@ -190,24 +190,24 @@ body { font-family:Arial, Helvetica, sans-serif; }
     height: auto;
 }
 .block-slider .bx-prev{
-    right: 0px;
+    left: 0;
     padding-left: 3px;
 }
 .block-slider .bx-next{
-    left: 0px;
+    right: 0;
     padding-right: 3px;
 }
 .block-slider:hover .bx-prev{
-    right: 10px;
+    left: 10px;
 }
 .block-slider:hover .bx-next{
-    left: 10px;
+    right: 10px;
 }
 .block-slider .bx-prev:hover,
 .block-slider .bx-next:hover{
-    background: #5a88ca;
+    background: #e74c3c;
     color: #fff;
-    border-color: #5a88ca;
+    border-color: #e74c3c;
 }
 
 /*------------------
@@ -235,12 +235,12 @@ body { font-family:Arial, Helvetica, sans-serif; }
     border-radius: 50%;
 }
 .block-slider .bx-pager-item a.active{
-    background: #1bd172;
+    background: #e74c3c;
 }
 .block-slider .caption-group{
     position: absolute;
     top: 26%;
-    left: 16%;
+    right: 16%;
 }
 .block-slider .caption-group .title{
     margin: 0;
@@ -253,7 +253,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
     margin-top: 27px;
 }
 .block-slider .caption-group .primary{
-    color: #1bd172;
+    color: #e74c3c;
 }
 .block-slider .caption-group .caption{
 
@@ -305,7 +305,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
     color: #fff;
     width: 28px;
     height: 28px;
-    background-color: #5a88ca;
+    background-color: #e74c3c;
     border-radius: 90%;
     text-align: center;
     line-height: 26px;
@@ -361,12 +361,12 @@ body { font-family:Arial, Helvetica, sans-serif; }
 }
 
 .single-promo:hover {color: #fff;background: #222;}
-.promo1 { background:#5a88ca;}
+.promo1 { background:#e74c3c;}
 .promo2 { background:#ffd900;}
 .promo3 { background:#fa8072;}
 .promo4 { background:#4abebd;}
 .section-title {
-    font-family: "Raleway",sans-serif;
+    font-family: 'Vazir',sans-serif;
     font-size: 50px;
     font-weight: 100;
     margin-bottom: 50px;
@@ -395,7 +395,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
     width: 100%;transition: .4s;
 }
 .product-hover a {
-    background: none repeat scroll 100% 0 #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
     border-radius: 5px;
     color: #fff;
     display: block;
@@ -406,7 +406,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
     position: absolute;
     text-align: center;
     text-transform: uppercase;
-    border: 1px solid #5a88ca;
+    border: 1px solid #e74c3c;
     width: 80%;z-index: 99;transition: .4s;
 }
 .product-hover a:hover {
@@ -414,7 +414,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
     text-decoration: none;border-color: #444;
 }
 .product-carousel-price ins {
-    color: #5a88ca;
+    color: #e74c3c;
     font-weight: 700;
     margin-left: 5px;
     text-decoration: none;
@@ -436,7 +436,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
     color: #222;
 }
 .single-product p {
-    color: #5a88ca;
+    color: #e74c3c;
     font-weight: 700;
 }
 
@@ -444,7 +444,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
     overflow: hidden;
 }
 .single-product:hover {}
-.single-product:hover .product-hover a.add-to-cart-link {top: 32%;}
+.single-product:hover .product-hover a.add-to-cart-link {top: 43%;}
 .single-product:hover .product-hover a.view-details-link {bottom: 32%;}
 .single-product:hover .product-hover:after{right: 0}
 
@@ -491,7 +491,6 @@ body { font-family:Arial, Helvetica, sans-serif; }
 .maincontent-area {padding-bottom: 50px; padding-top:20px;}
 
 .product-wid-title {
-    font-family: raleway;
     font-size: 30px;
     font-weight: 100;
     margin-bottom: 40px;
@@ -517,7 +516,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
     margin-bottom: 10px;
 }
 .product-wid-price ins {
-    color: #5a88ca;
+    color: #e74c3c;
     font-weight: 700;
     margin-left: 10px;
     text-decoration: none;
@@ -526,10 +525,10 @@ body { font-family:Arial, Helvetica, sans-serif; }
     color: #222;
 }
 .single-wid-product h2 a:hover, .single-product h2 a:hover {
-    color: #5a88ca;
+    color: #e74c3c;
 }
 .wid-view-more {
-    background: none repeat scroll 100% 0 #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
     color: #fff;
     padding: 3px 15px;
     position: absolute;
@@ -553,10 +552,9 @@ body { font-family:Arial, Helvetica, sans-serif; }
 
 .footer-bottom-area {background: #000;color: #fff}
 .footer-about-us span {
-    color: #5a88ca;
+    color: #e74c3c;
 }
 .footer-wid-title {
-    font-family: raleway;
     font-size: 30px;
     font-weight: 100;color: #fff
 }
@@ -580,7 +578,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
 
 
 .footer-social a {
-    background: none repeat scroll 100% 0 #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
     color: #fff;
     display: inline-block;
     font-size: 20px;
@@ -589,7 +587,7 @@ body { font-family:Arial, Helvetica, sans-serif; }
     margin-left: 10px;
     padding-top: 5px;
     text-align: center;
-    width: 40px;border: 1px solid #5a88ca;
+    width: 40px;border: 1px solid #e74c3c;
 }
 
 .footer-social a:hover {background-color: #222;border-color: #666}
@@ -605,19 +603,19 @@ body { font-family:Arial, Helvetica, sans-serif; }
     width: 100%;
 }
 .newsletter-form input[type="submit"] {
-    background: none repeat scroll 100% 0 #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
     border: medium none;
     color: #fff;
     display: inline-block;
     font-size: 18px;
     padding: 7px 20px;
-    text-transform: uppercase;border: 1px solid #5a88ca;
+    text-transform: uppercase;border: 1px solid #e74c3c;
 }
 .newsletter-form input[type="submit"]:hover {background: #222;border-color: #666}
 .newsletter-form {
     margin-top: 25px;
 }
-a {color: #5a88ca}
+a {color: #e74c3c}
 a:hover, a:focus {color: #17a78b}
 .footer-bottom-area {
     background: none repeat scroll 100% 0 #000;
@@ -678,10 +676,9 @@ ol.slide-indicators li.active {
     margin: 10px 0 0;
 }
 
-.product-big-title-area {background: url(img/crossword.png) repeat scroll 100% 0 #5a88ca}
+.product-big-title-area {background: url(img/crossword.png) repeat scroll 100% 0 #e74c3c}
 
 .product-bit-title h2 {
-    font-family: raleway;
     font-size: 50px;
     font-weight: 200;
     margin: 0;
@@ -712,7 +709,7 @@ input[type="text"], input[type="password"], input[type="email"], textarea {
     padding: 10px;
 }
 input[type="submit"], button[type=submit] {
-    background: none repeat scroll 100% 0 #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
     border: medium none;
     color: #fff;
     padding: 11px 20px;
@@ -741,7 +738,7 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
     color: #222;
 }
 .product-sidebar-price > ins {
-    color: #5a88ca;
+    color: #e74c3c;
     font-weight: 700;
     margin-left: 10px;
     text-decoration: none;
@@ -795,7 +792,7 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
     margin-bottom: 25px;
 }
 .product-inner-price > ins {
-    color: #5a88ca;
+    color: #e74c3c;
     font-weight: 700;
     margin-left: 10px;
     text-decoration: none;
@@ -805,12 +802,12 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
     margin-left: 15px;
 }
 .quantity input[type="number"] {
-    border: 1px solid #5a88ca;
+    border: 1px solid #e74c3c;
     padding: 5px;
     width: 50px;
 }
 .add_to_cart_button {
-    background: none repeat scroll 100% 0 #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
     border: medium none;
     color: #fff;
     padding: 6px 25px;display: inline-block
@@ -833,7 +830,7 @@ form.cart {
     display: inline-block;
 }
 .product-tab li.active {
-    background: none repeat scroll 100% 0 #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
 }
 .product-tab li.active a {
     color: #fff;
@@ -918,7 +915,7 @@ td.product-name {
     font-size: 18px;
 }
 div.quantity input.plus, div.quantity input.minus {
-    background: none repeat scroll 100% 0 #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
     border: medium none;
     color: #fff;
     height: 25px;
@@ -946,7 +943,7 @@ td.actions div.coupon {
     width: 40%;
 }
 .cart-collaterals h2 {
-    color: #5a88ca;
+    color: #e74c3c;
     font-size: 25px;
     margin-bottom: 25px;
     text-transform: uppercase;
@@ -978,7 +975,7 @@ div.cart-collaterals ul.products li.product {
 .onsale {
 }
 div.cart-collaterals ul.products li.product .onsale {
-    background: none repeat scroll 100% 0 #5a88ca;
+    background: none repeat scroll 100% 0 #e74c3c;
     color: #fff;
     padding: 5px 10px;
     position: absolute;
@@ -998,7 +995,7 @@ div.cart-collaterals ul.products li.product .price {
 .price > ins {
 }
 div.cart-collaterals ul.products li.product .price ins {
-    color: #5a88ca;
+    color: #e74c3c;
     font-weight: 700;
     margin-right: 10px;
     text-decoration: none;
@@ -1030,7 +1027,7 @@ div.cart-collaterals ul.products li.product .price ins {
     width: 100%;
 }
 #customer_details h3 {
-    color: #5a88ca;
+    color: #e74c3c;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -1040,7 +1037,7 @@ div.cart-collaterals ul.products li.product .price ins {
     padding: 15px;
 }
 #order_review_heading {
-    color: #5a88ca;
+    color: #e74c3c;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -1075,9 +1072,9 @@ table.shop_table td.product-remove a {
 
 table.shop_table td.product-remove a:hover {color: #fff;background: red;text-decoration: none}
 table.shop_table td.product-name a{color: #222;}
-table.shop_table td.product-name a:hover {color: #5a88ca;text-decoration: none}
+table.shop_table td.product-name a:hover {color: #e74c3c;text-decoration: none}
 div.quantity input.plus:hover, div.quantity input.minus:hover {background-color: #222}
-div.cart-collaterals ul.products li.product a:hover h3 {color: #5a88ca}
+div.cart-collaterals ul.products li.product a:hover h3 {color: #e74c3c}
 div.cart-collaterals ul.products li.product a:hover {text-decoration: none}
 
 div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background-color: #222}
@@ -1119,5 +1116,11 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 .single-shop-product {margin-bottom: 50px}
 
 .pagination > li > a, .pagination > li > span {
-    color: #5a88ca;
+    color: #e74c3c;
+}
+
+@media screen and (min-width: 750px) {
+    #langselect {
+        float: left;
+    }
 }

@@ -1,213 +1,284 @@
 <!DOCTYPE html>
-<html class=" js no-touch" lang="en"><head>
+<!--
+	ustora by freshdesignweb.com
+	Twitter: https://twitter.com/freshdesignweb
+	URL: https://www.freshdesignweb.com/ustora/
+-->
+<html style="direction: rtl">
+<head>
     <meta charset="utf-8">
-    <title>Remember - Multipurpose bootstrap site template</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your page description here">
-    <meta name="author" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ustora Demo</title>
 
-    <!-- css -->
-{{--    <link href="css/bootstrap.css" rel="stylesheet">--}}
-    {{ HTML::style('vendors/Remember/css/bootstrap.css') }}
-{{--    <link href="css/bootstrap-responsive.css" rel="stylesheet">--}}
-    {{ HTML::style('vendors/Remember/css/bootstrap-responsive.css') }}
-{{--    <link href="css/prettyPhoto.css" rel="stylesheet">--}}
-    {{ HTML::style('vendors/Remember/css/prettyPhoto.css') }}
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-{{--    <link href="css/style.css" rel="stylesheet">--}}
-    {{ HTML::style('vendors/Remember/css/style.css') }}
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
 
-<!-- Theme skin -->
-    <link id="t-colors" href="color/default.css" rel="stylesheet">
-    {{ HTML::style('vendors/Remember/color/default.css') }}
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">
-    @yield('header')
-    <!-- =======================================================
-      Theme Name: Remember
-      Theme URL: https://bootstrapmade.com/remember-free-multipurpose-bootstrap-template/
-      Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
+    <!-- Bootstrap -->
+{{--    <link rel="stylesheet" href="css/bootstrap.min.css">--}}
+{{ HTML::style('vendors/ustora/css/bootstrap.min.css') }}
+
+<!-- Font Awesome -->
+{{--    <link rel="stylesheet" href="css/font-awesome.min.css">--}}
+{{ HTML::style('vendors/ustora/css/font-awesome.min.css') }}
+<!-- Custom CSS -->
+{{--    <link rel="stylesheet" href="css/owl.carousel.css">--}}
+{{ HTML::style('vendors/ustora/css/owl.carousel.css') }}
+{{--    <link rel="stylesheet" href="style.css">--}}
+{{ HTML::style('vendors/ustora/style.css') }}
+{{--    <link rel="stylesheet" href="css/responsive.css">--}}
+{{ HTML::style('vendors/ustora/css/responsive.css') }}
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
-    <div id="wrapper">
-        <!-- start header -->
-        <header>
-            <div class="container">
 
-                <div class="row nomargin">
-                    <div class="span4">
-                        <div class="logo">
-                            <h1><a href="index.html"><i class="icon-tint"></i> Remember</a></h1>
-                        </div>
-                    </div>
-                    <div class="span8">
-                        <div class="navbar navbar-static-top">
-                            <div class="navigation">
-                                <nav>
-                                    <ul class="nav topnav bold">
-                                        <li class="active">
-                                            <a href="index.html">Home</a>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Features <i class="icon-angle-down"></i></a>
-                                            <ul class="dropdown-menu bold">
-                                                <li><a href="typography.html">Typography</a></li>
-                                                <li><a href="components.html">Components</a></li>
-                                                <li><a href="icons.html">Icons</a></li>
-                                                <li><a href="icon-variations.html">Icon variations</a></li>
-
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Pages <i class="icon-angle-down"></i></a>
-                                            <ul class="dropdown-menu bold">
-                                                <li><a href="about.html">About us</a></li>
-                                                <li><a href="pricingbox.html">Pricing boxes</a></li>
-                                                <li><a href="404.html">404</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Portfolio <i class="icon-angle-down"></i></a>
-                                            <ul class="dropdown-menu bold">
-                                                <li><a href="portfolio-2cols.html">Portfolio 2 columns</a></li>
-                                                <li><a href="portfolio-3cols.html">Portfolio 3 columns</a></li>
-                                                <li><a href="portfolio-4cols.html">Portfolio 4 columns</a></li>
-                                                <li><a href="portfolio-detail.html">Portfolio detail</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Blog <i class="icon-angle-down"></i></a>
-                                            <ul class="dropdown-menu bold">
-                                                <li><a href="blog-left-sidebar.html">Blog left sidebar</a></li>
-                                                <li><a href="blog-right-sidebar.html">Blog right sidebar</a></li>
-                                                <li><a href="post-left-sidebar.html">Post left sidebar</a></li>
-                                                <li><a href="post-right-sidebar.html">Post right sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">Contact </a>
-                                        </li>
-                                    </ul>
-                                </nav><select class="selectmenu"><option value="" selected="">Go to..</option><option value="index.html"> Home</option><option value="#"> Features </option><option value="typography.html"> -  Typography</option><option value="components.html"> -  Components</option><option value="icons.html"> -  Icons</option><option value="icon-variations.html"> -  Icon variations</option><option value="#"> Pages </option><option value="about.html"> -  About us</option><option value="pricingbox.html"> -  Pricing boxes</option><option value="404.html"> -  404</option><option value="#"> Portfolio </option><option value="portfolio-2cols.html"> -  Portfolio 2 columns</option><option value="portfolio-3cols.html"> -  Portfolio 3 columns</option><option value="portfolio-4cols.html"> -  Portfolio 4 columns</option><option value="portfolio-detail.html"> -  Portfolio detail</option><option value="#"> Blog </option><option value="blog-left-sidebar.html"> -  Blog left sidebar</option><option value="blog-right-sidebar.html"> -  Blog right sidebar</option><option value="post-left-sidebar.html"> -  Post left sidebar</option><option value="post-right-sidebar.html"> -  Post right sidebar</option><option value="contact.html"> Contact </option></select>
-                            </div>
-                            <!-- end navigation -->
-                        </div>
-                    </div>
+<div class="header-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="user-menu">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-user"></i> ورود</a></li>
+                        <li><a href="checkout.html"><i class="fa fa-user"></i> خروج</a></li>
+                        <li><a href="#"><i class="fa fa-user"></i> پروفایل من</a></li>
+                        {{--                        <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>--}}
+                        {{--                        <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>--}}
+                    </ul>
                 </div>
             </div>
-        </header>
-        <section id="intro">
-            <div class="intro-content">
-                <h2>Welcome to Remember!</h2>
-                <h3>Lorem ipsum dolor sit amet, elit persecuti efficiendi</h3>
-                <div>
-                    <a href="#content" class="btn-get-started scrollto">Get Started</a>
-                </div>
-            </div>
-        </section>
-        <section id="content">
-            <div class="container">
-                @yield('content')
-            </div>
-        </section>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="span4">
-                        <div class="widget">
-                            <div class="footer_logo">
-                                <h3><a href="index.html"><i class="icon-tint"></i> Remember</a></h3>
-                            </div>
-                            <address>
-                                <strong>Remember company Inc.</strong><br>
-                                Somestreet KW 101, Park Village W.01<br>
-                                Jakarta 13426 Indonesia
-                            </address>
-                            <p>
-                                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
-                                <i class="icon-envelope-alt"></i> email@domainname.com
-                            </p>
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="widget">
-                            <h5 class="widgetheading">Browse pages</h5>
-                            <ul class="link-list">
-                                <li><a href="#">Our company</a></li>
-                                <li><a href="#">Terms and conditions</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">Press release</a></li>
-                                <li><a href="#">What we have done</a></li>
-                                <li><a href="#">Our support forum</a></li>
+
+            <div class="col-md-4">
+                <div class="header-right">
+                    <ul class="list-unstyled list-inline">
+{{--                        <li class="dropdown dropdown-small">--}}
+{{--                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>--}}
+{{--                            <ul class="dropdown-menu">--}}
+{{--                                <li><a href="#">USD</a></li>--}}
+{{--                                <li><a href="#">INR</a></li>--}}
+{{--                                <li><a href="#">GBP</a></li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+
+                        <li class="dropdown dropdown-small">
+                            <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">زبان :</span><span class="value">فارسی </span><b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">French</a></li>
+                                <li><a href="#">German</a></li>
                             </ul>
-
-                        </div>
-                    </div>
-                    <div class="span4">
-                        <div class="widget">
-                            <h5 class="widgetheading">From flickr</h5>
-                            <div class="flickr_badge">
-                                <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
-                            </div>
-                            <div class="clear"></div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div id="sub-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="span6">
-                            <div class="copyright">
-                                <p><span>© Remember Inc. All right reserved</span></p>
-                            </div>
-
-                        </div>
-
-                        <div class="span6">
-                            <div class="credits">
-                                <!--
-                                  All the links in the footer should remain intact.
-                                  You can delete the links only if you purchased the pro version.
-                                  Licensing information: https://bootstrapmade.com/license/
-                                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Remember
-                                -->
-                                Created by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div>
     </div>
-    <a href="#" class="scrollup" style="display: block;"><i class="icon-angle-up icon-rounded icon-bglight icon-2x"></i></a>
-{{--    <script src="js/jquery.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/jquery.js') }}
-{{--    <script src="js/jquery.easing.1.3.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/jquery.easing.1.3.js') }}
-{{--    <script src="js/bootstrap.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/bootstrap.js') }}
-{{--    <script src="js/modernizr.custom.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/modernizr.custom.js') }}
-{{--    <script src="js/toucheffects.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/toucheffects.js') }}
-{{--    <script src="js/google-code-prettify/prettify.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/google-code-prettify/prettify.js') }}
-{{--    <script src="js/jquery.prettyPhoto.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/jquery.prettyPhoto.js') }}
-{{--    <script src="js/portfolio/jquery.quicksand.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/portfolio/jquery.quicksand.js') }}
-{{--    <script src="js/portfolio/setting.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/portfolio/setting.js') }}
-{{--    <script src="js/animate.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/animate.js') }}
-    <!-- Template Custom JavaScript File -->
-{{--    <script src="js/custom.js"></script>--}}
-    {{ HTML::script('vendors/Remember/js/custom.js') }}
+</div> <!-- End header area -->
+
+<div class="site-branding-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="logo">
+                    <h1><a href="./"><div style="background-image:url({{ url('vendors/ustora/img/logo.jpg') }});width: 100px;height: 100px;background-size: contain "></div></a></h1>
+                </div>
+            </div>
+
+{{--            <div class="col-sm-6">--}}
+{{--                <div class="shopping-item">--}}
+{{--                    <a href="cart.html">Cart - <span class="cart-amunt">$100</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+        </div>
+    </div>
+</div> <!-- End site branding area -->
+
+<div class="mainmenu-area">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">صفحه اصلی</a></li>
+                    <li><a href="shop.html">محصولات</a></li>
+                    <li><a href="single-product.html">پروژه ها</a></li>
+                    <li><a href="cart.html">درباره ما</a></li>
+                    <li><a href="checkout.html">تماس با ما</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> <!-- End mainmenu area -->
+
+<div class="slider-area" style="direction: ltr">
+    <!-- Slider -->
+    <div class="block-slider block-slider4">
+        <ul class="" id="bxslider-home4">
+            <li>
+                <img src="{{ asset('vendors/ustora/img/h4-slide.png') }}" alt="Slide">
+                <div class="caption-group">
+                    <h2 class="caption title">
+                        iPhone <span class="primary">6 <strong>Plus</strong></span>
+                    </h2>
+                    <h4 class="caption subtitle">Dual SIM</h4>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
+                </div>
+            </li>
+            <li><img src="{{ asset('vendors/ustora/img/bg2.jpg') }}" alt="Slide">
+                <div class="caption-group">
+                    <h2 class="caption title">
+                        by one, get one <span class="primary">50% <strong>off</strong></span>
+                    </h2>
+                    <h4 class="caption subtitle">school supplies & backpacks.*</h4>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
+                </div>
+            </li>
+            <li><img src="{{ asset('vendors/ustora/img/h4-slide3.png') }}" alt="Slide">
+                <div class="caption-group">
+                    <h2 class="caption title">
+                        Apple <span class="primary">Store <strong>Ipod</strong></span>
+                    </h2>
+                    <h4 class="caption subtitle">Select Item</h4>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
+                </div>
+            </li>
+            <li><img src="{{ asset('vendors/ustora/img/h4-slide4.png') }}" alt="Slide">
+                <div class="caption-group">
+                    <h2 class="caption title">
+                        Apple <span class="primary">Store <strong>Ipod</strong></span>
+                    </h2>
+                    <h4 class="caption subtitle">& Phone</h4>
+                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- ./Slider -->
+</div> <!-- End slider area -->
+
+
+@yield('body')
+
+
+<div class="footer-top-area">
+    <div class="zigzag-bottom"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-about-us">
+                    <h2>u<span>Stora</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+                    <div class="footer-social">
+                        <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-menu">
+                    <h2 class="footer-wid-title">User Navigation </h2>
+                    <ul>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">Order history</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Vendor contact</a></li>
+                        <li><a href="#">Front page</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-menu">
+                    <h2 class="footer-wid-title">Categories</h2>
+                    <ul>
+                        <li><a href="#">Mobile Phone</a></li>
+                        <li><a href="#">Home accesseries</a></li>
+                        <li><a href="#">LED TV</a></li>
+                        <li><a href="#">Computer</a></li>
+                        <li><a href="#">Gadets</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="footer-newsletter">
+                    <h2 class="footer-wid-title">Newsletter</h2>
+                    <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                    <div class="newsletter-form">
+                        <form action="#">
+                            <input type="email" placeholder="Type your email">
+                            <input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End footer top area -->
+
+<div class="footer-bottom-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="copyright">
+                    <p>&copy; 2015 uCommerce. All Rights Reserved. <a href="http://www.freshdesignweb.com" target="_blank">freshDesignweb.com</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="footer-card-icon">
+                    <i class="fa fa-cc-discover"></i>
+                    <i class="fa fa-cc-mastercard"></i>
+                    <i class="fa fa-cc-paypal"></i>
+                    <i class="fa fa-cc-visa"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- End footer bottom area -->
+
+<!-- Latest jQuery form server -->
+<script src="https://code.jquery.com/jquery.min.js"></script>
+
+
+<!-- Bootstrap JS form CDN -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+<!-- jQuery sticky menu -->
+{{--<script src="js/owl.carousel.min.js"></script>--}}
+{{ HTML::script('vendors/ustora/js/owl.carousel.min.js') }}
+{{--<script src="js/jquery.sticky.js"></script>--}}
+{{ HTML::script('vendors/ustora/js/jquery.sticky.js') }}
+<!-- jQuery easing -->
+{{--<script src="js/jquery.easing.1.3.min.js"></script>--}}
+{{ HTML::script('vendors/ustora/js/jquery.easing.1.3.min.js') }}
+
+<!-- Main Script -->
+{{--<script src="js/main.js"></script>--}}
+{{ HTML::script('vendors/ustora/js/main.js') }}
+
+<!-- Slider -->
+{{--<script type="text/javascript" src="js/bxslider.min.js"></script>--}}
+<script type="text/javascript" src="{{ URL::asset('vendors/ustora/js/bxslider.min.js') }}"></script>
+{{--<script type="text/javascript" src="js/script.slider.js"></script>--}}
+<script type="text/javascript" src="{{ URL::asset('vendors/ustora/js/script.slider.js') }}"></script>
 </body>
+</html>

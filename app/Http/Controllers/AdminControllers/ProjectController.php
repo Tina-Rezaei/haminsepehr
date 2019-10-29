@@ -65,19 +65,18 @@ class ProjectController extends Controller
             $thumbnailimg->resize(400,null,function ($constraint){
                $constraint->aspectRatio();
             });
+            $thumbnailimg->save(public_path('images/projects/'.$thumbnail_name));
         }else{
-            $thumbnail_name = 'default.png';
+            $thumbnail_name = 'default.gif';
         }
 
-        //save file
-        $base_path = 'images/projects/';
-        $thumbnailimg->save(public_path($base_path.$thumbnail_name));
+
 //        $thumbnailimg = $request->file('thumbnailimg')->storeAs('public',$thumbnail_name);
         $project = new Project();
         $project->title =  $request->title;
         $project->body =  $request->body;
         $project->coverimg =  '';
-        $project->thumbnailimg = $base_path.$thumbnail_name;
+        $project->thumbnailimg = 'images/projects/'.$thumbnail_name;
         $project->save();
 
         return redirect()->route('projects.index');
@@ -119,8 +118,10 @@ class ProjectController extends Controller
         $project = Project::find($id);
         if($project){
             if($request->hasFile('thumbnailimg')){
-                $project_image = public_path($project->thumbnailimg);
-                File::delete($project_image);
+                if($project->thumbnailimg !== 'images/projects/default.gif') {
+                    $project_image = public_path($project->thumbnailimg);
+                    File::delete($project_image);
+                }
                 $thumbnail_name = time().'.'.$request->file('thumbnailimg')->getClientOriginalName();
                 $thumbnailimg = Image::make($request->file('thumbnailimg'));
                 $thumbnailimg->save(public_path('images/projects/'.$thumbnail_name));

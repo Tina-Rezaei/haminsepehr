@@ -66,6 +66,25 @@
                             <input id="first-name" name="counts_in_stock" min="0"  class="form-control" type="number" style="margin-top:3px">
                         </div>
                     </div>
+
+                    <div class="form-group col-md-12 col-sm-12 col-xs-12">
+                        <label class="control-label col-md-12 col-sm-12 col-xs-12"  style="text-align: right">انتخاب تصویر بندانگشتی :
+                            <span class="required">*</span>
+                        </label>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div id="">
+                            <div class="col-md-3 col-sm-4 col-xs-11 wow pulse" >
+                                <div  id="blah" style=" width: 100%;background-image: url('{{asset('images/products/default.gif')}}')" class="d-block mygallery" alt="...">
+                                </div>
+                                <span class="btn btn-primary btn-file" style="width: 100%;margin-right: 0 ">
+                            انتخاب عکس <input type="file" name="thumbnailimg" id="thumbnailimg" accept="image/*" onchange="readURL(this);" >
+                                 </span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="form-group col-md-12 col-sm-12 col-xs-12">
                         <label class="control-label col-md-12 col-sm-12 col-xs-12"  style="text-align: right">گالری تصاویر
                             <span class="required">*</span>

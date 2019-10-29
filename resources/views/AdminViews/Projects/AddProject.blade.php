@@ -73,15 +73,9 @@
                     // $('#blah')
                         .css('background-image', `url('${e.target.result}')`);
                 };
-                const id = input.parentElement.parentElement.getAttribute('id');
-                if(id)
-                    ids.push(id);
-                $(input.parentElement.parentElement).attr('id','');
+
                 reader.readAsDataURL(input.files[0]);
             }
-        }
-        function myFunction() {
-            alert ('kk');
         }
     </script>
 @endsection

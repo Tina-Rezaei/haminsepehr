@@ -28,9 +28,9 @@ class ProductController extends Controller
             if(strlen(strip_tags($product->description))>50) {
                 $product->description = mb_substr(strip_tags($product->description), 0, 50) . '...';
             }
-            $product_image = ProductGallery::where('product_id',$product->id)->first();
-            if($product_image)
-                $product['image'] = $product_image->image;
+            $product_image = Product::find($product->id);
+            if($product_image->thumbnail_img)
+                $product['image'] = $product_image->thumbnail_img;
             else
                 $product['image'] = 'images/products/default.gif';
 
@@ -70,9 +70,6 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-
-
-//        Product::create($request->all());
         $product = new Product();
         $product->products_code = $request->products_code;
         $product->name = $request->product_name;
@@ -80,12 +77,26 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->price = $request->price;
         $product->counts_in_stock = $request->counts_in_stock;
+
+//        Product::create($request->all());
+        if($request->hasFile('thumbnailimg')) {
+            $image = $request->file('thumbnailimg');
+            $image_name = time().'.'.$image->getClientOriginalName();
+            $image = Image::make($image->getRealPath());
+            $image->resize(212,271);
+            $image->save(public_path('images/products/' . $image_name));
+            $product->thumbnail_img = 'images/products/' . $image_name;
+
+        }else{
+            $product->thumbnail_img = 'images/products/default.gif';
+        }
         $product->save();
 
         if($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
                 $image_name = time().'.'.$image->getClientOriginalName();
                 $image = Image::make($image->getRealPath());
+                $image->resize(212,271);
                 $image->save(public_path('images/products/' . $image_name));
                 $product_gallery = new ProductGallery();
                 $product_gallery->product_id = $product->id;
@@ -201,12 +212,25 @@ class ProductController extends Controller
         $product->description = $request->description;
         $product->price = $request->price;
         $product->counts_in_stock = $request->counts_in_stock;
+        if($request->hasFile('thumbnailimg')){
+            if($product->thumbnail_img !== 'images/products/default.gif'){
+                $image = public_path($product->thumbnail_img);
+                File::delete($image);
+            }
+            $image = $request->file('thumbnailimg');
+            $image_name = time().'.'.$image->getClientOriginalName();
+            $image = Image::make($image->getRealPath());
+            $image->resize(212,271);
+            $image->save(public_path('images/products/' . $image_name));
+            $product->thumbnail_img = 'images/products/' . $image_name;
+        }
         $product->save();
 
         if($request->hasFile('images')) {
             foreach ($request->file('images') as $image) {
                 $image_name = time().'.'.$image->getClientOriginalName();
                 $image = Image::make($image->getRealPath());
+                $image->resize(212,271);
                 $image->save(public_path('images/products/' . $image_name));
                 $product_gallery = new ProductGallery();
                 $product_gallery->product_id = $product->id;

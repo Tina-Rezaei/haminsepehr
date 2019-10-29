@@ -28,5 +28,9 @@ Route::resource('products','AdminControllers\ProductController');
 Route::resource('categories','AdminControllers\CategoryController')->except(['create']);;
 Route::get('categories/create/{id}','AdminControllers\CategoryController@create')->name('categories.create');
 Route::get('/loginpage',function (){
-   return view('UserViews.master');
+   return view('UserViews.Homepage');
 });
+
+
+//users routes
+Route::get('/','UserControllers\HomeController@index')->name('/');

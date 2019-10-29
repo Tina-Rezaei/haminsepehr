@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class ProductGallery extends Model
 {
     public function products(){
-        return $this->belongsTo('Product','product_code');
+        return $this->belongsTo(Product::class);
     }
 }

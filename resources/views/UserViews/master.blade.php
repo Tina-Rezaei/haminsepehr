@@ -113,7 +113,7 @@
                         <div style="background-image:url({{ url('vendors/ustora/img/logo.jpg') }});width: 100px;height: 100px;background-size: contain; display: inline-block; transform: translateX(30px)"></div>
                     </a>
 
-                    <li class="active"><a href="index.html">صفحه اصلی</a></li>
+                    <li class="active"><a href="{{ route('/') }}">صفحه اصلی</a></li>
                     <li><a href="shop.html">محصولات</a></li>
                     <li><a href="single-product.html">پروژه ها</a></li>
                     <li><a href="#">ناحیه کاربری</a></li>

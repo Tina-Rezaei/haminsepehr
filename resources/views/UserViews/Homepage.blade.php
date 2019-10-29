@@ -53,7 +53,7 @@
                         <div class="product-carousel">
                             @foreach($products as $product)
                                 <div class="single-product" style="width: 240px;height: 260px;">
-                                    <div class="product-f-image" style="background-image:url({{ url($product->product_gallery[0]->image) }});background-size:cover;background-position: 50% 50%; width: 220px;height: 260px">
+                                    <div class="product-f-image" style="background-image:url({{ url($product->thumbnail_img) }});background-size:cover;background-position: 50% 50%; width: 220px;height: 260px">
 {{--                                        <img src="{{ asset($product->product_gallery[0]->image) }}" alt="">--}}
 {{--                                        <img src="{{ asset('vendors/ustora/img/product-6.jpg') }}" alt="">--}}
                                         <div class="product-hover">

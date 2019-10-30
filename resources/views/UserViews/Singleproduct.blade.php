@@ -1,71 +1,97 @@
 @extends('UserViews.master')
+
+@section('extra_css')
+    {{ HTML::style('unitegallery/css/unite-gallery.css') }}
+{{--    {{ HTML::style('unitegallery/themes/default/ug-theme-default.css') }}--}}
+@append
+
+@section('extra_js')
+    {{ HTML::script('unitegallery/js/unitegallery.min.js') }}
+    {{ HTML::script('unitegallery/themes/tilesgrid/ug-theme-tilesgrid.js') }}
+@append
+
+@section('js_ready_event')
+    @if(false)
+        <script>
+    @endif
+    jQuery("#gallery1").unitegallery({
+        theme_navigation_type:"arrows"
+    });
+    @if(false)
+        </script>
+    @endif
+@append
+
+
+
 @section('body')
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
         <div class="container" style="direction: rtl">
             <div class="row" style="">
-
-                <div class="col-md-8">
-                    <div class="product-content-right">
-                        <div class="product-breadcroumb">
-                            <a href="">صفحه اصلی</a>
-                            <a href="">محصولات</a>
-                            <a href="">Sony Smart TV - 2015</a>
+                <div class="col-sm-6">
+                    <div class="product-images">
+                        <div class="product-main-img">
+                            <div style="background-image: url({{url($product->product_gallery[0]->image)}});width: 220px;height: 240px;background-size: cover;background-repeat: no-repeat"></div>
                         </div>
 
-                        <div class="row" style=" ">
-                            <div class="col-sm-6">
-                                <div class="product-images">
-                                    <div class="product-main-img">
-                                        <div style="background-image: url({{url($product->product_gallery[0]->image)}});width: 220px;height: 240px;background-size: cover;background-repeat: no-repeat"></div>
-                                    </div>
+                        <div id="gallery1">
+                            @foreach($product->product_gallery as $gallery)
+                                <img
+                                    src="{{ asset($gallery->image) }}"
+                                    data-image="{{ asset($gallery->image) }}"
+                                    alt="{{$product->name}}"
+                                >
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
 
-                                    <div class="product-gallery">
-                                        @foreach($product->product_gallery as $gallery)
-                                            <img src="{{ asset($gallery->image) }}" alt="">
-                                        @endforeach
-                                    </div>
+                <div class="col-sm-6">
+                    <div class="product-inner">
+
+                        <div role="tabpanel">
+                            <ul class="product-tab" role="tablist">
+                                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
+                                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                    <h2>Product Description</h2>
+                                    <p>{!! $product->description !!}</p>
                                 </div>
-                            </div>
+                                <div role="tabpanel" class="tab-pane fade" id="profile">
+                                    <h2>Reviews</h2>
+                                    <div class="submit-review">
+                                        <p><label for="name">Name</label> <input name="name" type="text"></p>
+                                        <p><label for="email">Email</label> <input name="email" type="email"></p>
+                                        <div class="rating-chooser">
+                                            <p>Your rating</p>
 
-                            <div class="col-sm-6">
-                                <div class="product-inner">
-
-                                    <div role="tabpanel">
-                                        <ul class="product-tab" role="tablist">
-                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
-                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li>
-                                        </ul>
-                                        <div class="tab-content">
-                                            <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                                <h2>Product Description</h2>
-                                                <p>{!! $product->description !!}</p>
-                                            </div>
-                                            <div role="tabpanel" class="tab-pane fade" id="profile">
-                                                <h2>Reviews</h2>
-                                                <div class="submit-review">
-                                                    <p><label for="name">Name</label> <input name="name" type="text"></p>
-                                                    <p><label for="email">Email</label> <input name="email" type="email"></p>
-                                                    <div class="rating-chooser">
-                                                        <p>Your rating</p>
-
-                                                        <div class="rating-wrap-post">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </div>
-                                                    </div>
-                                                    <p><label for="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
-                                                    <p><input value="Submit" type="submit"></p>
-                                                </div>
+                                            <div class="rating-wrap-post">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                         </div>
+                                        <p><label for="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
+                                        <p><input value="Submit" type="submit"></p>
                                     </div>
-
                                 </div>
                             </div>
+                        </div>
+
+                    </div>
+                </div>
+
+{{--                <div class="col-md-8">--}}
+{{--                    <div class="product-content-right">--}}
+                        <div class="product-breadcroumb">
+                            <a href="/">صفحه اصلی</a>
+                            <a href="">محصولات</a>
+                            <a href="">{{$product->name}}</a>
                         </div>
 
 
@@ -241,8 +267,8 @@
 {{--                                                </div>--}}
 {{--                                            </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="">prev</div><div class="owl-next" style="">next</div></div><div style="" class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>--}}
 {{--                        </div>--}}
-                    </div>
-                </div>
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
     </div>

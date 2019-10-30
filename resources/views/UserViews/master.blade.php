@@ -7,9 +7,9 @@
     <title>شرکت حامین سپهر</title>
 
     <!-- Google Fonts -->
-{{--    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>--}}
-{{--    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>--}}
-{{--    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>--}}
+    {{--    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>--}}
+    {{--    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>--}}
+    {{--    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>--}}
     <link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap -->
@@ -26,6 +26,8 @@
 {{ HTML::style('vendors/ustora/style.css') }}
 {{--    <link rel="stylesheet" href="css/responsive.css">--}}
 {{ HTML::style('vendors/ustora/css/responsive.css') }}
+
+    @yield('extra_css')
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -281,7 +283,109 @@
 
 <!-- Main Script -->
 {{--<script src="js/main.js"></script>--}}
-{{ HTML::script('vendors/ustora/js/main.js') }}
+
+
+@yield('extra_js')
+
+
+<script>
+    jQuery(document).ready(function($){
+        // jQuery sticky Menu
+        $(".mainmenu-area").sticky({topSpacing:0});
+
+
+        $('.product-carousel').owlCarousel({
+            loop:false,
+            nav:true,
+            dots: false,
+            navText: ['بعدی','قبلی'],
+            margin:30,
+            responsiveClass:true,
+            dotsContainer: 'oh',
+            responsive:{
+                0:{
+                    items:1,
+                },
+                600:{
+                    items:3,
+                },
+                1000:{
+                    items:5,
+                }
+            }
+        });
+
+        $('.related-products-carousel').owlCarousel({
+            loop:true,
+            nav:true,
+            margin:20,
+            dots: false,
+            navText: ['بعدی','قبلی'],
+            responsiveClass:true,
+            dotsContainer: 'oh',
+            responsive:{
+                0:{
+                    items:1,
+                },
+                600:{
+                    items:2,
+                },
+                1000:{
+                    items:2,
+                },
+                1200:{
+                    items:3,
+                }
+            }
+        });
+
+        $('.brand-list').owlCarousel({
+            loop:true,
+            nav:true,
+            dots: false,
+            navText: ['بعدی','قبلی'],
+            margin:20,
+            dotsContainer: 'oh',
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                },
+                600:{
+                    items:3,
+                },
+                1000:{
+                    items:4,
+                }
+            }
+        });
+
+
+        // // Bootstrap Mobile Menu fix
+        // $(".navbar-nav li a").click(function(){
+        //     $(".navbar-collapse").removeClass('in');
+        // });
+
+        // jQuery Scroll effect
+        $('.navbar-nav li a, .scroll-to-up').bind('click', function(event) {
+            var $anchor = $(this);
+            var headerH = $('.header-area').outerHeight();
+            $('html, body').stop().animate({
+                scrollTop : $($anchor.attr('href')).offset().top - headerH + "px"
+            }, 1200, 'easeInOutExpo');
+
+            event.preventDefault();
+        });
+
+        // Bootstrap ScrollPSY
+        $('body').scrollspy({
+            target: '.navbar-collapse',
+            offset: 95
+        });
+
+        @yield('js_ready_event')
+    });
+</script>
 
 <!-- Slider -->
 {{--<script type="text/javascript" src="js/bxslider.min.js"></script>--}}

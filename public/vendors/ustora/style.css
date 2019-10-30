@@ -26,7 +26,14 @@ h5,
 h6 {
     margin: 0 0 15px;
 }
-body { font-family:'Vazir', Helvetica, sans-serif; }
+body {
+    font-family:'Vazir', Helvetica, sans-serif;
+    /*background: url(img/bg.jpg) repeat-y fixed 50% 50%;*/
+    /*background-size: cover;*/
+    /*!*background: rgb(51,51,51);*!*/
+    /*background: linear-gradient(0deg, rgba(51,51,51,1) 0%, rgba(231,76,60,1) 100%);*/
+
+}
 
 
 
@@ -150,7 +157,7 @@ body { font-family:'Vazir', Helvetica, sans-serif; }
 .mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #e74c3c; color:#FFF;}
 .mainmenu-area .nav > li > a:focus {color: #FFF;}
 
-.slider-area { width:100%; position:relative; margin:0 auto; padding:5px;}
+.slider-area { width:100%; position:relative; margin:0 auto; padding:0}
 /*-------------------------
 [9. Block slider]
 ---------------------------*/
@@ -445,7 +452,7 @@ body { font-family:'Vazir', Helvetica, sans-serif; }
 }
 .single-product:hover {}
 .single-product:hover .product-hover a.add-to-cart-link {top: 43%;}
-.single-product:hover .product-hover a.view-details-link {bottom: 32%;}
+.single-product:hover .product-hover a.view-details-link {bottom: 40%;}
 .single-product:hover .product-hover:after{right: 0}
 
 
@@ -616,7 +623,7 @@ body { font-family:'Vazir', Helvetica, sans-serif; }
     margin-top: 25px;
 }
 a {color: #e74c3c}
-a:hover, a:focus {color: #17a78b}
+a:hover, a:focus {color: #e74c3d}
 .footer-bottom-area {
     background: none repeat scroll 100% 0 #000;
     color: #fff;

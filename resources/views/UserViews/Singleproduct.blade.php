@@ -17,13 +17,13 @@
                             <div class="col-sm-6">
                                 <div class="product-images">
                                     <div class="product-main-img">
-                                        <img src="{{ asset('vendors/ustora/img/product-2.jpg') }}" alt="">
+                                        <div style="background-image: url({{url($product->product_gallery[0]->image)}});width: 220px;height: 240px;background-size: cover;background-repeat: no-repeat"></div>
                                     </div>
 
                                     <div class="product-gallery">
-                                        <img src="img/product-thumb-1.jpg" alt="">
-                                        <img src="img/product-thumb-2.jpg" alt="">
-                                        <img src="img/product-thumb-3.jpg" alt="">
+                                        @foreach($product->product_gallery as $gallery)
+                                            <img src="{{ asset($gallery->image) }}" alt="">
+                                        @endforeach
                                     </div>
                                 </div>
                             </div>

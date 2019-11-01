@@ -151,7 +151,7 @@ body {
 .mainmenu-area ul.navbar-nav li a {
     color: #6e6a6a;
     font-size: 14px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #e74c3c; color:#FFF;}
@@ -763,7 +763,7 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
     display: block;
 }
 .product-breadcroumb {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
 }
 .product-breadcroumb > a {
     margin-left: 31px;

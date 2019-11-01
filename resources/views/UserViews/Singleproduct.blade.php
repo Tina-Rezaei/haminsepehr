@@ -15,7 +15,8 @@
         <script>
     @endif
     jQuery("#gallery1").unitegallery({
-        theme_navigation_type:"arrows"
+        theme_navigation_type:"arrows",
+        grid_num_rows:1
     });
     @if(false)
         </script>
@@ -28,11 +29,24 @@
     <div class="single-product-area">
         <div class="zigzag-bottom"></div>
         <div class="container" style="direction: rtl">
-            <div class="row" style="">
-                <div class="col-sm-6">
+            <div class="row" style="background-color: #fefefe;;border-radius: 8px;margin-bottom: 5px;padding: 10px;border-right: solid 7px #e74c3c">
+                <div class="col-sm-12">
+                    {{--                <div class="col-md-8">--}}
+                    {{--                    <div class="product-content-right">--}}
+                    <div class="product-breadcroumb">
+                        <a href="/">صفحه اصلی</a>
+                        <a href="">محصولات</a>
+                        <a href="">{{$product->name}}</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row" style="background-color: #fefefe;padding: 20px;border-radius: 8px;">
+
+                <div class="col-sm-6" style="border-left: solid #f5f5f5;">
                     <div class="product-images">
                         <div class="product-main-img">
-                            <div style="background-image: url({{url($product->product_gallery[0]->image)}});width: 220px;height: 240px;background-size: cover;background-repeat: no-repeat"></div>
+                            <div class="img-rounded" style="background-image: url({{url($product->product_gallery[0]->image)}});width: 312px;height: 378px;background-size: cover;background-repeat: no-repeat;margin: auto;background-position: 50% 50%"></div>
                         </div>
 
                         <div id="gallery1">
@@ -85,15 +99,6 @@
 
                     </div>
                 </div>
-
-{{--                <div class="col-md-8">--}}
-{{--                    <div class="product-content-right">--}}
-                        <div class="product-breadcroumb">
-                            <a href="/">صفحه اصلی</a>
-                            <a href="">محصولات</a>
-                            <a href="">{{$product->name}}</a>
-                        </div>
-
 
 {{--                        <div class="related-products-wrapper">--}}
 {{--                            <h2 class="related-products-title">Related Products</h2>--}}

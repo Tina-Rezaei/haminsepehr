@@ -36,7 +36,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body style="background-color: #f5f5f5">
 
 {{--<div class="header-area">--}}
 {{--    <div class="container">--}}
@@ -112,7 +112,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav" style="width: 100%; padding-top: 18px">
                     <a href="#" class="logo" style="display: inline-block; margin-top: -18px; float: right">
-                        <div style="background-image:url({{ url('vendors/ustora/img/logo.jpg') }});width: 100px;height: 100px;background-size: contain; display: inline-block; transform: translateX(30px)"></div>
+                        <div style="background-image:url({{ url('vendors/ustora/img/logo.jpg') }});width: 60px;height: 60px;background-size: contain; display: inline-block; transform: translateX(30px)"></div>
                     </a>
 
                     <li class="active"><a href="{{ route('/') }}">صفحه اصلی</a></li>
@@ -140,40 +140,40 @@
         <ul class="" id="bxslider-home4">
             <li>
                 <img src="{{ asset('vendors/ustora/img/h4-slide.png') }}" alt="Slide">
-                <div class="caption-group">
-                    <h2 class="caption title">
-                        iPhone <span class="primary">6 <strong>Plus</strong></span>
-                    </h2>
-                    <h4 class="caption subtitle">Dual SIM</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                </div>
+{{--                <div class="caption-group">--}}
+{{--                    <h2 class="caption title">--}}
+{{--                        iPhone <span class="primary">6 <strong>Plus</strong></span>--}}
+{{--                    </h2>--}}
+{{--                    <h4 class="caption subtitle">Dual SIM</h4>--}}
+{{--                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>--}}
+{{--                </div>--}}
             </li>
             <li><img src="{{ asset('vendors/ustora/img/bg2.jpg') }}" alt="Slide">
-                <div class="caption-group">
-                    <h2 class="caption title">
-                        by one, get one <span class="primary">50% <strong>off</strong></span>
-                    </h2>
-                    <h4 class="caption subtitle">school supplies & backpacks.*</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                </div>
+{{--                <div class="caption-group">--}}
+{{--                    <h2 class="caption title">--}}
+{{--                        by one, get one <span class="primary">50% <strong>off</strong></span>--}}
+{{--                    </h2>--}}
+{{--                    <h4 class="caption subtitle">school supplies & backpacks.*</h4>--}}
+{{--                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>--}}
+{{--                </div>--}}
             </li>
-            <li><img src="{{ asset('vendors/ustora/img/h4-slide3.png') }}" alt="Slide">
-                <div class="caption-group">
-                    <h2 class="caption title">
-                        Apple <span class="primary">Store <strong>Ipod</strong></span>
-                    </h2>
-                    <h4 class="caption subtitle">Select Item</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                </div>
+            <li><img src="{{ asset('vendors/ustora/img/slide3.jpg') }}" alt="Slide">
+{{--                <div class="caption-group">--}}
+{{--                    <h2 class="caption title">--}}
+{{--                        Apple <span class="primary">Store <strong>Ipod</strong></span>--}}
+{{--                    </h2>--}}
+{{--                    <h4 class="caption subtitle">Select Item</h4>--}}
+{{--                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>--}}
+{{--                </div>--}}
             </li>
-            <li><img src="{{ asset('vendors/ustora/img/h4-slide4.png') }}" alt="Slide">
-                <div class="caption-group">
-                    <h2 class="caption title">
-                        Apple <span class="primary">Store <strong>Ipod</strong></span>
-                    </h2>
-                    <h4 class="caption subtitle">& Phone</h4>
-                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>
-                </div>
+            <li><img src="{{ asset('vendors/ustora/img/slide2.jpg') }}" alt="Slide">
+{{--                <div class="caption-group">--}}
+{{--                    <h2 class="caption title">--}}
+{{--                        Apple <span class="primary">Store <strong>Ipod</strong></span>--}}
+{{--                    </h2>--}}
+{{--                    <h4 class="caption subtitle">& Phone</h4>--}}
+{{--                    <a class="caption button-radius" href="#"><span class="icon"></span>Shop now</a>--}}
+{{--                </div>--}}
             </li>
         </ul>
     </div>

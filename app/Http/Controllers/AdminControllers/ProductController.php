@@ -85,7 +85,7 @@ class ProductController extends Controller
             $image = Image::make($image->getRealPath());
             $image->resize(212,271);
             $image->save(public_path('images/products/' . $image_name));
-            $product->thumbnail_img = 'images/products/' . $image_name;
+            $product->thumbnail_img =  $image_name;
 
         }else{
             $product->thumbnail_img = 'images/products/default.gif';
@@ -96,7 +96,8 @@ class ProductController extends Controller
             foreach ($request->file('images') as $image) {
                 $image_name = time().'.'.$image->getClientOriginalName();
                 $image = Image::make($image->getRealPath());
-                $image->resize(212,271);
+                if($image->width()>1200)
+                    $image->widen(1200);
                 $image->save(public_path('images/products/' . $image_name));
                 $product_gallery = new ProductGallery();
                 $product_gallery->product_id = $product->id;
@@ -230,7 +231,8 @@ class ProductController extends Controller
             foreach ($request->file('images') as $image) {
                 $image_name = time().'.'.$image->getClientOriginalName();
                 $image = Image::make($image->getRealPath());
-                $image->resize(212,271);
+                if($image->width()>1200)
+                    $image->widen(1200);
                 $image->save(public_path('images/products/' . $image_name));
                 $product_gallery = new ProductGallery();
                 $product_gallery->product_id = $product->id;

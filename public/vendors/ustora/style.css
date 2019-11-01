@@ -625,9 +625,9 @@ body {
 a {color: #e74c3c}
 a:hover, a:focus {color: #e74c3d}
 .footer-bottom-area {
+    padding: 10px 0;
     background: none repeat scroll 100% 0 #000;
     color: #fff;
-    padding-bottom: 40px;
 }
 
 
@@ -1077,7 +1077,7 @@ table.shop_table td.product-remove a {
 }
 
 
-table.shop_table td.product-remove a:hover {color: #fff;background: red;text-decoration: none}
+table.shop_table td.product-remove a:hover {color: #fff;background: #e74c3c;text-decoration: none}
 table.shop_table td.product-name a{color: #222;}
 table.shop_table td.product-name a:hover {color: #e74c3c;text-decoration: none}
 div.quantity input.plus:hover, div.quantity input.minus:hover {background-color: #222}
@@ -1130,4 +1130,50 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
     #langselect {
         float: left;
     }
+}
+
+.product-captioner{
+    color: #34495e;
+    z-index: 2;
+    padding: 0 20px 0 25px;
+    border-top: solid 2px #e74c3c;
+    border-right: solid 7px #e74c3c;
+    border-left: solid 8px #e74c3c;
+    background-image: inherit !important;
+    position: relative;
+    border-top-left-radius: 50px;
+    margin-top: -68px;
+    height: 50px;
+    line-height: 50px;
+    margin-right: -42px;
+    display: inline-block;
+    float: right;
+    background: #fefefe;
+}
+
+.product-captioner .caption i{
+    transform: scale(1);
+    transition: .3s all linear;
+}
+.product-captioner .caption{
+    display: inline-block;
+}
+
+.product-captioner .caption:hover i{
+    transform: scale(1.2);
+}
+
+.comments{
+    margin-top: 50px;
+}
+
+.comments .comment{
+    margin-top: 40px;
+}
+.comment .name{
+    font-weight: bolder;
+}
+
+.comment .comment-icon{
+    color: #e74c3c;
 }

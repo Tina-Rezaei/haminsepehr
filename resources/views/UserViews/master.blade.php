@@ -10,9 +10,137 @@
     {{--    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>--}}
     {{--    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>--}}
     {{--    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>--}}
-    <link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
 
-    <!-- Bootstrap -->
+
+    <style>
+        #loader{
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left:0;
+            z-index: 999999999999;
+            right: 0;
+            top:0;
+            bottom: 0;
+            text-align: center;
+            background: #fefefe;
+            color: #f6f6f6;
+            transition: all .7s ease-in;
+            opacity: 1;
+        }
+        #loader .loader-container{
+            position: relative;
+            top: 50%;
+        }
+
+        .sk-folding-cube {
+            margin: 20px auto;
+            width: 40px;
+            height: 40px;
+            position: relative;
+            -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+        }
+
+        .sk-folding-cube .sk-cube {
+            float: left;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        .sk-folding-cube .sk-cube:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #e74c3c;
+            -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
+            animation: sk-foldCubeAngle 2.4s infinite linear both;
+            -webkit-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+        }
+        .sk-folding-cube .sk-cube2 {
+            -webkit-transform: scale(1.1) rotateZ(90deg);
+            transform: scale(1.1) rotateZ(90deg);
+        }
+        .sk-folding-cube .sk-cube3 {
+            -webkit-transform: scale(1.1) rotateZ(180deg);
+            transform: scale(1.1) rotateZ(180deg);
+        }
+        .sk-folding-cube .sk-cube4 {
+            -webkit-transform: scale(1.1) rotateZ(270deg);
+            transform: scale(1.1) rotateZ(270deg);
+        }
+        .sk-folding-cube .sk-cube2:before {
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+        }
+        .sk-folding-cube .sk-cube3:before {
+            -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+        }
+        .sk-folding-cube .sk-cube4:before {
+            -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+        }
+        @-webkit-keyframes sk-foldCubeAngle {
+            0%, 10% {
+                -webkit-transform: perspective(140px) rotateX(-180deg);
+                transform: perspective(140px) rotateX(-180deg);
+                opacity: 0;
+            } 25%, 75% {
+                  -webkit-transform: perspective(140px) rotateX(0deg);
+                  transform: perspective(140px) rotateX(0deg);
+                  opacity: 1;
+              } 90%, 100% {
+                    -webkit-transform: perspective(140px) rotateY(180deg);
+                    transform: perspective(140px) rotateY(180deg);
+                    opacity: 0;
+                }
+        }
+
+        @keyframes sk-foldCubeAngle {
+            0%, 10% {
+                -webkit-transform: perspective(140px) rotateX(-180deg);
+                transform: perspective(140px) rotateX(-180deg);
+                opacity: 0;
+            } 25%, 75% {
+                  -webkit-transform: perspective(140px) rotateX(0deg);
+                  transform: perspective(140px) rotateX(0deg);
+                  opacity: 1;
+              } 90%, 100% {
+                    -webkit-transform: perspective(140px) rotateY(180deg);
+                    transform: perspective(140px) rotateY(180deg);
+                    opacity: 0;
+                }
+        }
+    </style>
+</head>
+<body style="background-color: #f5f5f5">
+
+
+
+
+<div id="loader">
+    <div class="loader-container">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+</div>
+
+<link href='https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css' rel='stylesheet' type='text/css'>
+
+<!-- Bootstrap -->
 {{--    <link rel="stylesheet" href="css/bootstrap.min.css">--}}
 {{ HTML::style('vendors/ustora/css/bootstrap.min.css') }}
 
@@ -27,16 +155,16 @@
 {{--    <link rel="stylesheet" href="css/responsive.css">--}}
 {{ HTML::style('vendors/ustora/css/responsive.css') }}
 
-    @yield('extra_css')
+@yield('extra_css')
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-<body style="background-color: #f5f5f5">
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
 
 {{--<div class="header-area">--}}
 {{--    <div class="container">--}}
@@ -386,6 +514,12 @@
         });
 
         @yield('js_ready_event')
+        const loader = document.getElementById("loader");
+
+        // Hide css loader
+        loader.style.opacity = 0;
+        setTimeout(()=>{loader.style.display = 'none';}, 700);
+
     });
 </script>
 

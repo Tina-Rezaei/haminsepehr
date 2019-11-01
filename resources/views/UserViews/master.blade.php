@@ -190,8 +190,10 @@
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="footer-about-us">
-                    <h2>u<span>Stora</span></h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
+                    <h2> شرکت حامین <span> سپهر</span></h2>
+                    <p style="text-align: justify">
+                        ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت ويژگی های شرکت
+                    </p>
                     <div class="footer-social">
                         <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
                         <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -203,38 +205,38 @@
 
             <div class="col-md-3 col-sm-6">
                 <div class="footer-menu">
-                    <h2 class="footer-wid-title">User Navigation </h2>
+                    <h2 class="footer-wid-title">منو سریع</h2>
                     <ul>
-                        <li><a href="#">My account</a></li>
-                        <li><a href="#">Order history</a></li>
-                        <li><a href="#">Wishlist</a></li>
-                        <li><a href="#">Vendor contact</a></li>
-                        <li><a href="#">Front page</a></li>
+                        <li><a href="#">حساب من</a></li>
+                        <li><a href="#">لیست محصولات</a></li>
+                        <li><a href="#">محصولات پر طرفدار</a></li>
+                        <li><a href="#">ارتبات با ما</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="col-md-3 col-sm-6">
                 <div class="footer-menu">
-                    <h2 class="footer-wid-title">Categories</h2>
+                    <h2 class="footer-wid-title">دسته بندی سریع</h2>
                     <ul>
-                        <li><a href="#">Mobile Phone</a></li>
-                        <li><a href="#">Home accesseries</a></li>
-                        <li><a href="#">LED TV</a></li>
-                        <li><a href="#">Computer</a></li>
-                        <li><a href="#">Gadets</a></li>
+                        <li><a href="#">Inim</a></li>
+                        <li><a href="#">HOCHIKI</a></li>
+                        <li><a href="#">SIEMENS</a></li>
+                        <li><a href="#">GENT</a></li>
                     </ul>
                 </div>
             </div>
 
             <div class="col-md-3 col-sm-6">
                 <div class="footer-newsletter">
-                    <h2 class="footer-wid-title">Newsletter</h2>
-                    <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                    <h2 class="footer-wid-title">مشترک</h2>
+                    <p>
+                        با ثبت نام در این بخش از اخبار ما و آخرین محصولات مطلع شوید!
+                    </p>
                     <div class="newsletter-form">
                         <form action="#">
-                            <input type="email" placeholder="Type your email">
-                            <input type="submit" value="Subscribe">
+                            <input type="email" placeholder="ایمیل خود را وارد کنید">
+                            <input type="submit" value="ثبت">
                         </form>
                     </div>
                 </div>
